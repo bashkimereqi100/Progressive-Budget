@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#317EFB">
+    <link rel="manifest" href="https://evening-peak-28036.herokuapp.com/manifest.webmanifest">
+
+    <link rel="stylesheet" href="video_files/font-awesome.css">
+    <link rel="stylesheet" href="video_files/styles.css">
+    <title>Budget Tracker</title>
+  <style type="text/css">/* Chart.js */
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
+  <body>
+    <div class="wrapper"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+      <div class="total">
+        <div>Your total is: $<span id="total">1276</span></div>
+      </div>
+
+      <form>
+        <label for="t-name">Transaction Name:</label>
+        <input type="text" id="t-name" placeholder="Name">
+
+        <label for="t-amount">Transaction Amount:</label>
+        <input type="number" min="0" id="t-amount" placeholder="Amount">
+
+        <div class="transaction-buttons">
+          <button id="add-btn"><i class="fa fa-plus"></i> Add Funds</button>
+          <button id="sub-btn">
+            <i class="fa fa-minus"></i> Subtract Funds
+          </button>
+          <button id="del-btn">
+            <i class="fa fa-trash"></i> Delete Pending records
+          </button>
+        </div>
+        <p role="alert" class="error"></p>
+      </form>
+
+      <div class="transactions">
+        <table>
+          <thead>
+            <tr><th>Transaction</th>
+            <th>Amount</th>
+          </tr></thead>
+          <tbody id="tbody"><tr>
+      <td>service car</td>
+      <td>-85</td>
+    </tr><tr>
+      <td>service car</td>
+      <td>300</td>
+    </tr><tr>
+      <td>fruits</td>
+      <td>20</td>
+    </tr><tr>
+      <td>computer</td>
+      <td>800</td>
+    </tr><tr>
+      <td>food</td>
+      <td>120</td>
+    </tr><tr>
+      <td>oil</td>
+      <td>90</td>
+    </tr><tr>
+      <td>tools</td>
+      <td>-899989</td>
+    </tr><tr>
+      <td>tools</td>
+      <td>899989</td>
+    </tr><tr>
+      <td>Dog</td>
+      <td>-89</td>
+    </tr><tr>
+      <td>Buu</td>
+      <td>55</td>
+    </tr><tr>
+      <td>test</td>
+      <td>15</td>
+    </tr><tr>
+      <td>10</td>
+      <td>-10</td>
+    </tr><tr>
+      <td>test6</td>
+      <td>10</td>
+    </tr><tr>
+      <td>test5</td>
+      <td>5</td>
+    </tr><tr>
+      <td>test</td>
+      <td>-5</td>
+    </tr><tr>
+      <td>test</td>
+      <td>20</td>
+    </tr><tr>
+      <td>test</td>
+      <td>15</td>
+    </tr><tr>
+      <td>test</td>
+      <td>-5</td>
+    </tr><tr>
+      <td>test</td>
+      <td>10</td>
+    </tr><tr>
+      <td>test</td>
+      <td>10</td>
+    </tr></tbody>
+        </table>
+      </div>
+
+      <canvas id="my-chart" style="display: block; height: 412px; width: 825px;" width="1031" height="515" class="chartjs-render-monitor"></canvas>
+    </div>
+
+    <script src="video_files/chart.0"></script>
+    <script src="video_files/db.js"></script>
+    <script src="video_files/index.js"></script>
+
+    <script>
+if ("serviceWorker" in navigator) {
+window.addEventListener("load", () => {
+navigator.serviceWorker.register("service-worker.js").then(reg => {
+console.log("We found your service worker file!", reg);
+  </script>
+</body>
+</html>
