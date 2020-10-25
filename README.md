@@ -4,3 +4,5 @@ The Progressive Budget allows us to track the budget and have any data we enter 
 
 
 ![](video_files/screenshot1.png)
+
+![](video_files/screenshot2.png)
